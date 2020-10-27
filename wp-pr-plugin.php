@@ -9,7 +9,7 @@ License: AGPLv3
 /* Start Adding Functions Below this Line */
 
 // Register Custom Post Type
-function products_post_type() {
+function sm_pr_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Press Releases', 'Post Type General Name', 'text_domain' ),
@@ -64,7 +64,7 @@ function products_post_type() {
 	register_post_type( 'pr', $args );
 
 }
-add_action( 'init', 'products_post_type', 0 );
+add_action( 'init', 'sm_pr_post_type', 0 );
 
 /* Stop Adding Functions Below this Line */
 ?>
